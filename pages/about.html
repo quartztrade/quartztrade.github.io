@@ -1,164 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Quartz</title>
-    <!-- Bootstrap CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="/assets/css/custom.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body class="bg-secondary-subtle">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Quartz</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - Quartz</title>
+  <!-- Bootstrap CSS -->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="/assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body class="bg-body-secondary">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <span class="px-4 py-2"><a class="navbar-brand h1" href="/index.html" style="font-size: 1.5rem;">Quartz</a></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Quartz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="font-size: 1.25rem;">              
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/index.html"
-                >Home</a
-              >
+              <a class="nav-link" href="/pages/about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/pages/about.html">About</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="/pages/solutions.html">Solutions</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/pages/contact.html">Contact</a>
-              </li> -->
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="container py-5">
-      <!-- Mission and Vision -->
-      <section class="mb-5">
-        
-          <div class="row">
-            <div class="col-md-6">
-                <div class="card  rounded-4 h-100">
-                    <div class="card-header">
+    </div>
+  </nav>
 
-                        <h2 class="h1">Mission</h2>
-                    </div>
-                    <div class="card-body">
-                        <p style="font-size: 18px;">
-                            To empower LATAM's SMEs by revolutionizing the trade ecosystem
-                            through blockchain technology, ensuring secure, efficient, and
-                            transparent transactions.
-                          </p>
-                    </div>
-              
-            </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card  rounded-4 h-100">
-                    <div class="card-header">
-                        <h2 class="h1">Vission</h2>
-                    </div>
-              <div class="card-body">
-                <p style="font-size: 18px;">
-                    To create a future where every SME in LATAM has the opportunity
-                    to grow and succeed in the global market without the traditional
-                    barriers to trade.
-                  </p>
-              </div>
-              
-              </div>
-            </div>
-          </div>
-      </section>
 
-      <!-- The Team -->
-      <section class="team">
-        <div class="card card-body rounded-4 p-5">
-        
-        <h2 class="h1">The Team</h2>
-        <p class="mb-4">
-          Meet the Team: A group of passionate innovators, technology experts,
-          and advocates for SME growth.
-        </p>
-        <div class="row">
-          <!-- Example Team Member -->
-          <div class="col col-md-4">
-            <div class="card h-100">
-              <img
-                src="/assets/images/daniel_p.jpg"
-                class="card-img-top"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Daniel Palbuchta</h5>
-                <p class="card-text">
-                    <span class="text-secondary" style="font-weight: 500;">Co-founder & CEO</span>. As an Attorney-at-law and business
-                  consultant, Daniel brings a wealth of legal and trade
-                  expertise to Quartz. With a focus on LATAM markets, he excels
-                  in navigating import and export laws, fostering international
-                  business relations, and leveraging emerging markets for
-                  growth. His role in Quartz is pivotal in ensuring seamless
-                  integration of blockchain technologies within legal
-                  frameworks, enhancing trust and transparency in trade
-                  processes. Additionally, their experience as an educator in
-                  Customs Law enriches our platform with invaluable insights.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Example Team Member -->
-          <div class="col col-md-4">
-            <div class="card h-100">
-              <img
-                src="/assets/images/diego_a.jpg"
-                class="card-img-top"
-                alt="Team Member"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Diego Alcocer</h5>
-                <p class="card-text">
-                  <span class="text-secondary" style="font-weight: 500;">Co-founder & CTO</span>. Diego, an accomplished software engineer,
-                  enhances our project with his expertise in cloud technologies
-                  like Azure and AWS. With a solid foundation in FinTech, his
-                  skills in blockchain, algorithmic trading, and cryptocurrency
-                  are particularly valuable, driving technological innovation
-                  and shaping our platform's architecture. Diego's passion for
-                  the user experience ensures our solutions not only meet
-                  technical excellence but are also user-centric and accessible,
-                  making him a key asset in realizing our vision for LATAM's
-                  trade transformation.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Additional team members here -->
+  <!-- Mission and Vision -->
+  <div class="py-5">
+    <h1 class="display-2 text-center py-5 px-2 my-5">Pioneering Fair Global Trade for LATAM</h1>
+  </div>
+  <section class="mb-5 py-5 bg-body">
+    <div class="container">
+      <div class="">
+        <div class="text-center px-lg-5 px-1 py-4" style="font-size: 1.5rem">
+          Our mission is to democratize global trade access for LATAM's SMEs, ensuring fair and transparent
+          transactions. We envision a world where every producer can directly reach international markets.
         </div>
-        
-            
-    </div>
-      </section>
-    </div>
-    <!-- Footer -->
-    <footer class="pt-5 px-4 my-5 text-muted border-top">
-      Quartz &middot; &copy; 2024
-    </footer>
+      </div>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    </div>
+
+  </section>
+  <div class="container py-5">
+    <div class="py-4">
+      <h2 class="display-4 mb-5 text-center">The Quartz Crew</h2>
+    </div>
+    <!-- The Team -->
+    <section class="team">
+
+      <div class="row">
+        <!-- Example Team Member -->
+        <div class="col-md-4 py-1">
+          <div class="card h-100 rounded-4">
+            <img src="/assets/images/daniel_p.jpg" class="card-img-top rounded-top-4" alt="Team Member" />
+            <div class="card-body">
+              <h3 class="card-title">Daniel Palbuchta</h5>                
+                  <div class="fs-4">Founder & CEO</div>                
+                <p>
+                  Legal visionary and trade expert, Daniel is architecting the future of fair trade in LATAM with Quartz.
+                </p>
+            </div>
+          </div>
+        </div>
+        <!-- Example Team Member -->
+        <div class="col-md-4 py-1">
+          <div class="card rounded-4 h-100">
+            <img src="/assets/images/diego_a.jpg" class="card-img-top rounded-top-4" alt="Team Member" />
+            <div class="card-body">
+              <h3 class="card-title">Diego Alcocer</h5>
+                <div class="fs-4">Founder & CTO</div>
+                <p class="card-text">
+                  Diego merges blockchain innovation with user-first design, driving Quartz's tech-forward trade revolution
+                </p>
+            </div>
+          </div>
+        </div>
+        <!-- Additional team members here -->
+      </div>
+
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="p-5 mt-5 border-top">
+    <div class="row my-5">
+      <div class="col">
+        <span class="text-muted">
+          Quartz &middot; &copy; 2024
+        </span>
+      </div>
+      <div class="col">
+        <div class="fs-4 mb-2">
+          Contact us
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/dapalbuchta/" target="_blank"><i class="bi bi-linkedin me-2"></i>Daniel
+            Palbuchta</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/diego-alcocer-palacios/" target="_blank"><i
+              class="bi bi-linkedin me-2"></i>Diego Alcocer</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

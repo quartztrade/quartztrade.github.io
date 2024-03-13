@@ -1,161 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quartz - Revolutionizing LATAM Trade</title>
-    <!-- Bootstrap CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  </head>
-  <body class="bg-secondary-subtle">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Quartz</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quartz - Revolutionizing LATAM Trade</title>
+  <!-- Bootstrap CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="assets/css/custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-body-secondary">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+      <span class="px-4 py-2"><a class="navbar-brand h1" href="/index.html" style="font-size: 1.5rem;">Quartz</a></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+        aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Quartz</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="font-size: 1.25rem;">
             <li class="nav-item">
               <a class="nav-link" href="/pages/about.html">About</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="/pages/solutions.html">Solutions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/pages/contact.html">Contact</a>
-            </li> -->
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <!-- <div class="col-10 col-sm-8 col-lg-6">
-          <img src="assets/images/hero-background.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div> -->
-        <div class="col">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            Revolutionizing Trade
-          </h1>
-          <p class="lead">
-            <span class="h5">Quartz</span> is a platform that empowers SMEs with blockchain technology for a more inclusive,
-            efficient, and transparent trade ecosystem.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="/pages/about.html" class="btn btn-outline-success btn-lg px-4 me-md-2">
+  <!-- HERO -->
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 border shadow-lg bg-body">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Revolutionizing Trade</h1>
+        <p class="lead">Quartz is a platform that empowers SMEs with blockchain technology for a more inclusive,
+          efficient, and transparent trade ecosystem.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <!-- <a href="/pages/about.html" class="btn btn-outline-success btn-lg px-4 me-md-2">
               Learn more
-            </a>
-          </div>
+            </a> -->
         </div>
       </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-3" src="assets/images/hero-background.jpg" alt="" width="720">
+      </div>
     </div>
+  </div>
 
-    <!-- Features Section -->
-  <div class="container">
+
+  <!-- Features Section -->
+  <div class="container py-5">
+    <div class="mb-5 text-center container">
+      <h2 class="mb-3 pt-2 display-4">
+        A Marketplace Reinvented
+      </h2>
+      <p class="" style="font-size: 1.5rem;">
+        With our smart contract platform, we're not just simplifying transactions; we're rebuilding trust, reducing
+        costs, and
+        opening direct lines between producers and end sellers
+      </p>
+    </div>
     <div class="row">
       <div class="col-md-4">
         <div class="card h-100 rounded-4 shadow-sm card-body text-center">
-            <div class="d-flex justify-content-center">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4" style="background-color: #75e2a9;">
-                    <i class="bi bi-lightbulb" style="font-size: 50px;"></i>
-                </div>
+          <div class="d-flex justify-content-center">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4"
+              style="background-color: #75e2a9;">
+              <i class="bi bi-lightbulb" style="font-size: 50px;"></i>
             </div>
-            <h2 class="mb-3">Innovative</h2>
-            <p>Quartz revolutionizes trade by employing blockchain technology for secure, transparent transactions. Supporting both traditional (FIAT) currency and cryptocurrencies.</p>
+          </div>
+          <h2 class="mb-3">Innovative</h2>
+          <p class="fs-4">Employing blockchain technology for secure, transparent transactions. Supporting both
+            traditional (FIAT)
+            currency and cryptocurrencies.</p>
         </div>
       </div>
       <div class="col-md-4">
         <div class="card h-100 rounded-4 shadow-sm card-body text-center">
-            <div class="d-flex justify-content-center">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4" style="background-color: #75d4bc;">
-                    <i class="bi bi-shop-window" style="font-size: 50px;"></i>
-                </div>
+          <div class="d-flex justify-content-center">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4"
+              style="background-color: #75d4bc;">
+              <i class="bi bi-shop-window" style="font-size: 50px;"></i>
             </div>
-            <h2 class="mb-3">Direct Marketplace</h2>
-            <p>A transformative platform where LATAM's SMEs directly connect, bid, and trade. We're empowering businesses to unlock new markets effortlessly.</p>
-        </div>        
+          </div>
+          <h2 class="mb-3">Marketplace</h2>
+          <p class="fs-4">A platform where SMEs directly connect, and trade. We're empowering businesses to unlock new
+            markets
+            effortlessly.</p>
+        </div>
       </div>
       <div class="col-md-4">
         <div class="card h-100 rounded-4 shadow-sm card-body text-center">
-            <div class="d-flex justify-content-center">
-                <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4" style="background-color: #75c0dc;">
-                    <i class="bi bi-file-earmark-lock" style="font-size: 50px;"></i>
-                </div>
+          <div class="d-flex justify-content-center">
+            <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 my-4"
+              style="background-color: #75c0dc;">
+              <i class="bi bi-file-earmark-lock" style="font-size: 50px;"></i>
             </div>
-            <h2 class="mb-3">Smart Contracts</h2>
-            <p>Our smart contract system automates and streamlines processes, reducing disputes and eliminating the need for costly intermediaries.</p>
+          </div>
+          <h2 class="mb-3">Smart Contracts</h2>
+          <p class="fs-4">Our system automates and streamlines processes, reducing disputes and eliminating the need for
+            costly
+            intermediaries.</p>
         </div>
-        
+
       </div>
     </div>
-    <div class="row my-5" id="learnMoreSection">
-        <div class="col">
-            <div class="card card-body rounded-4 text-center shadow-sm">
-                <div class="my-3">
-                    <h2 class="mb-3">Empowering Growth</h2>
-                    <p>
-                        Quartz is more than a platform; it's a growth catalyst for LATAM's SMEs. 
-                    </p>
-                    <p>
-                        By removing traditional trade barriers, we empower businesses to expand their horizons, explore new markets, and seize opportunities previously out of reach. 
-                    </p>
-                    <p>
-                        Our mission is to foster economic growth and prosperity across the region.
-                    </p>
-                </div>
 
-                <div class="my-3 pt-5 border-top">
-                    <h2 class="mb-3">Building Confidence in Trade</h2>
-                    <p>
-                        Trade with confidence like never before. Quartz introduces an escrow and trust system alongside contract insurance, ensuring that transactions are secure, and parties are protected. 
-                    </p>
-                    <p>
-                        Our approach is designed to rebuild trust in LATAM's trade ecosystem, making every transaction seamless and reliable. 
-                    </p>
-                </div>
-                <div class="my-3  pt-5 border-top">
-                    <h2 class="mb-3">Navigating the Future</h2>
-                    <p>
-                        Join us on a journey to redefine international trade. With Quartz, you're not just adapting to the digital age; you're leading the charge. 
-                    </p>
-                    <p>
-                        Embrace innovation, leverage smart contracts, and be part of a community that's setting new standards for efficiency and transparency in trade. 
-                    </p>
+  </div>
+  <div class="bg-body-tertiary my-5 py-5" id="learnMoreSection">
 
-                </div>
-            
-               
-            
-            </div>
 
+    <div class="my-5 text-center container">
+      <h2 class="mb-3 pt-2 display-4">
+        Smarter Trade with Quartz
+      </h2>
+      <p class="" style="font-size: 1.5rem;">
+        Quartz is dedicated to transforming the landscape of LATAM trade by empowering producers and streamlining
+        processes for importers. Our platform is designed to foster trust and efficiency in every transaction.
+      </p>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="display-4">35%</div>
+          <div class="fs-5">Increase in Revenue for Producers</div>
         </div>
-
+        <div class="col-md-4">
+          <div class="display-4">20%</div>
+          <div class="fs-5">Reduction in Costs for Importers</div>
+        </div>
+        <div class="col-md-4">
+          <div class="display-4">100%</div>
+          <div class="fs-5">Trustworthy Transactions Guaranteed</div>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="pt-5 px-4 my-5 text-muted border-top">
-    Quartz &middot; &copy; 2024
+  <footer class="p-5 mt-5 border-top">
+    <div class="row my-5">
+      <div class="col">
+        <span class="text-muted">
+          Quartz &middot; &copy; 2024
+        </span>
+      </div>
+      <div class="col">
+        <div class="fs-4 mb-2">
+          Contact us
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/dapalbuchta/" target="_blank"><i class="bi bi-linkedin me-2"></i>Daniel
+            Palbuchta</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/diego-alcocer-palacios/" target="_blank"><i
+              class="bi bi-linkedin me-2"></i>Diego Alcocer</a>
+        </div>
+      </div>
+    </div>
+    </div>
   </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
