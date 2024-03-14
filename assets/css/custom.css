@@ -3,3 +3,63 @@
     height: 8rem;
     border-radius: 50%;
 }
+
+/* Basic styles for navbar links */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #000; /* Example color */
+    text-decoration: none; /* Remove default underline */
+}
+
+/* Create the underline effect on hover */
+.nav-link:hover::after, .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; /* Example color */
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+/* Initially, the underline should not be visible */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; /* Example color */
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+
+/* Team Card Styling */
+.card-team {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+
+.card-team:hover {
+    transform: translateY(-10px); /* Slightly raise the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.footer {
+    background-color: #343a40; /* Dark footer background */
+    color: #ffffff; /* White text color */
+}
+
+.footer a.text-white:hover {
+    text-decoration: none; /* Optional: Removes underline on hover for a cleaner look */
+    color: #dddddd; /* Lightens the link color on hover */
+}
+
+.footer .footer-heading {
+    font-size: 1.25rem; /* Slightly larger font size for headings */
+    font-weight: 500; /* Medium font weight for slight emphasis */
+}
