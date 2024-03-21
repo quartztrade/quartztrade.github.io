@@ -50,12 +50,12 @@
 }
 
 .footer .footer-heading {
-    font-size: 1.25rem; /* Slightly larger font size for headings */
+    font-size: 1.15rem; /* Slightly larger font size for headings */
     font-weight: 500; /* Medium font weight for slight emphasis */
 }
 
 .image-hero {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0)70%, #eaecef), url('/assets/images/hero-background.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0)70%, #f8f9fa), url('/assets/images/hero-background.jpg');
     background-size: cover;
     background-position: center;
     height: 720px;
