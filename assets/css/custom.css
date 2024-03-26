@@ -8,12 +8,17 @@
 .nav-link {
     position: relative;
     display: inline-block;
-    color: #000; /* Example color */
-    text-decoration: none; /* Remove default underline */
+    color: #000;
+    text-decoration: none;
+    /* Remove default underline */
+}
+.nav-top {
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 /* Create the underline effect on hover */
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -21,10 +26,11 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000; /* Example color */
+    background-color: #000;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
 }
+
 /* Initially, the underline should not be visible */
 .nav-link::after {
     content: '';
@@ -34,24 +40,29 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000; /* Example color */
+    background-color: #000;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
 }
 
 /* Team Card Styling */
 .card-team {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for transform and shadow */
 }
 
 .card-team:hover {
-    transform: translateY(-10px); /* Slightly raise the card */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transform: translateY(-10px);
+    /* Slightly raise the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
 }
 
 .footer .footer-heading {
-    font-size: 1.15rem; /* Slightly larger font size for headings */
-    font-weight: 500; /* Medium font weight for slight emphasis */
+    font-size: 1.15rem;
+    /* Slightly larger font size for headings */
+    font-weight: 500;
+    /* Medium font weight for slight emphasis */
 }
 
 .image-hero {
@@ -60,16 +71,80 @@
     background-position: center;
     height: 720px;
 }
+
 /* Adjust the height for devices with a width of 768px or less (Tablets and mobile phones) */
 @media (max-width: 768px) {
     .image-hero {
-        height: 400px; /* Smaller height for mobile devices */
+        height: 400px;
+        /* Smaller height for mobile devices */
     }
 }
 
 /* Further adjust for very small devices if necessary */
 @media (max-width: 480px) {
     .image-hero {
-        height: 300px; /* Even smaller height for very small devices */
+        height: 300px;
+        /* Even smaller height for very small devices */
+    }
+}
+
+.bg-body-team {
+    background-color: #f8f9fa;
+    background-image: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+} */
+
+.team-member.card {
+    border: none;
+    overflow: hidden;
+    
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* .team-member.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member.card:hover .card-img-top {
+    transform: scale(1.05);
+} */
+
+.team-member.card-body {
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.team-member.card-title,
+.team-member.role {
+    font-weight: 600;
+}
+
+.team-member.description {
+    color: #666;
+}
+
+@media (min-width: 992px) {
+    .team-member {
+        max-width: 350px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member.card {
+        margin-bottom: 30px;
     }
 }

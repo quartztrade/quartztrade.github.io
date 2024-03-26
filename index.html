@@ -15,7 +15,7 @@
 
 <body class="bg-body-tertiary">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-body shadow-sm" aria-label="Offcanvas navbar large">
+  <nav class="navbar navbar-expand-lg bg-body shadow-sm nav-top sticky-top bg-opacity-75" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
       <span class="px-4 py-2"><a class="navbar-brand h1 fs-3" href="/index.html" style="letter-spacing: 0.011em;">Quartz.</a></span>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
@@ -29,8 +29,8 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="font-size: 1.25rem;">
-            <li class="nav-item border rounded-5 px-3">
-              <a class="nav-link" href="/pages/about.html">About</a>
+            <li class="nav-item">
+              <a class="nav-link " href="/pages/about.html">About</a>
             </li>
           </ul>
         </div>
@@ -64,13 +64,12 @@
         <h2 class="mb-3 pt-2 display-4 fw-semibold">
           A marketplace reinvented.
         </h2>
-        <p class="text-dark-emphasis" style="font-size: 1.5rem;">
-          Our <span class="text-dark">smart contract platform</span> does more than transaction simplification. We're rebuilding trust, reducing
-          costs, and opening direct lines between producers and end sellers.
+        <p class="text-dark-emphasis fs-2">
+          Our <span class="text-dark">smart contract platform</span> rebuilds trust, slashes costs, and opens direct lines between producers and end sellers.
         </p>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="my-3 my-md-1">
             <div class="card h-100 rounded-5 card-body text-center p-4">
               <div class="d-flex justify-content-center">
@@ -79,13 +78,13 @@
                   <i class="bi bi-lightbulb" style="font-size: 50px;"></i>
                 </div>
               </div>
-              <h2 class="mb-3">Innovative</h2>
+              <h2 class="my-3">Innovative</h2>
               <p class="fs-4 text-dark-emphasis">Employing blockchain for secure, transparent transactions. Supporting both
                 conventional currencies and cryptocurrencies.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="my-3 my-md-1">
             <div class="card h-100 rounded-5 card-body text-center p-4">
               <div class="d-flex justify-content-center">
@@ -94,12 +93,12 @@
                   <i class="bi bi-shop-window" style="font-size: 50px;"></i>
                 </div>
               </div>
-              <h2 class="mb-3">Marketplace</h2>
+              <h2 class="my-3">Marketplace</h2>
               <p class="fs-4 text-dark-emphasis">A platform where businesses directly connect and trade, empowering them to effortlessly unlock new markets.</p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <div class="my-3 my-md-1">
             <div class="card h-100 rounded-5 card-body text-center p-4">
               <div class="d-flex justify-content-center">
@@ -108,7 +107,7 @@
                   <i class="bi bi-file-earmark-lock" style="font-size: 50px;"></i>
                 </div>
               </div>
-              <h2 class="mb-3">Smart Contracts</h2>
+              <h2 class="my-3">Smart Contracts</h2>
               <p class="fs-4 text-dark-emphasis">Our system transforms trade by automating processes, minimizing disputes, and removing costly intermediaries.</p>
             </div>
           </div>
@@ -119,17 +118,41 @@
 
 
   <div class="pb-4 mb-5" id="learnMoreSection">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 d-flex flex-column justify-content-center">
+          <div class="text-center mt-5">
+            <h2 class="mb-3 display-4 fw-semibold">
+              The reality.
+            </h2>
+            <p class="fs-2">
+              Banana producers, for instance, earn merely <span class=" fw-semibold">6.6% from sales</span>, while <span class=" fw-semibold">intermediaries take 54.9%</span>.
+            </p>
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-center mt-5" style="max-height: 50vh;" data-aos="fade-up" data-aos-delay="300" data-aos-easing="linear">
+            <canvas id="paymentDistributionChart" width="400" height="400"></canvas>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="bg-body py-5">
     <div class="my-5 text-center container">
       <h2 class="mb-3 pt-2 display-4 fw-semibold">
         Smarter trade with Quartz.
       </h2>
-      <p class="" style="font-size: 1.5rem;">
+      <p class="fs-2" >
         Our platform boosts producer success and simplifies importer processes, creating a seamless, trustworthy trading environment.
       </p>
       <div class="row mt-5">
         <div class="col-md-4">
           <div class="py-2 mt-md-0 mt-4">
-            <div class="display-4" data-aos="fade-up" data-aos-delay="100" style="font-weight: 400;">35%</div>
+            <div class="display-4 fw-semibold" data-aos="fade-up" data-aos-delay="100">35%</div>
             <div class="fs-5 px-md-1 px-5">
                 Increase in Revenue for Producers
             </div>
@@ -137,37 +160,17 @@
         </div>
         <div class="col-md-4">
           <div class="py-2 mt-md-0 mt-4">
-            <div class="display-4" data-aos="fade-up" data-aos-delay="150" style="font-weight: 400;">20%</div>
+            <div class="display-4 fw-semibold" data-aos="fade-up" data-aos-delay="150">20%</div>
             <div class="fs-5 px-md-1 px-5">Reduction in Costs for Importers</div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="py-2 mt-md-0 mt-4">            
-            <div class="display-4" data-aos="fade-up" data-aos-delay="200" style="font-weight: 400;">100%</div>
-            <div class="fs-5 px-md-1 px-5">Trustworthy Transactions Guaranteed</div>
+            <div class="display-4 fw-semibold" data-aos="fade-up" data-aos-delay="150">100%</div>
+            <div class="fs-5 px-md-1 px-5 fw-med">Trustworthy Transactions Guaranteed</div>
           </div>
         </div>
       </div>
-      <div class="mt-5 border-top border-dark-subtle pt-5">
-        <h2 class="mb-3 pt-2 display-4 fw-semibold">
-          Producer Empowerment
-        </h2>
-        <p class="" style="font-size: 1.5rem;">
-          Take banana producers, for instance, who earn merely <span class=" fw-semibold">6.6% from sales</span>, while <span class=" fw-semibold">intermediaries take 54.9%</span>.
-        </p>
-        
-      </div>
-      <div class="d-flex justify-content-center mt-5" style="max-height: 50vh;">
-        <canvas id="paymentDistributionChart" width="400" height="400"></canvas>
-
-      </div>
-      <p class="mt-5 pt-3" style="font-size: 1.5rem;">
-        Quartz is changing that, aiming for <span class=" fw-semibold">fairer shares</span> and lower prices.
-      </p>
-      <div>
-        <a href="/pages/about.html" class="btn btn-outline-dark btn-lg rounded-5 px-4 mt-3">About us</a>
-      </div>
-
     </div>
   </div>
 
