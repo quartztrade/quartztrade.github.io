@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Quartz</title>
+  <title>Quartz | About Us</title>
   <!-- Bootstrap CSS -->
   <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link href="/assets/css/custom.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -47,27 +47,45 @@
 
 
   <!-- Mission and Vision -->
-  <section class="mb-5 py-5">
-    <div class="py-5 mb-5">
-      <div class="container">
-        <h1 class="display-1 text-center pt-5 px-2 mt-5 fw-bold">Pioneering fair trade for Latin America</h1>
-        <div class="">
-          <div class="text-center px-lg-5 px-1 py-4 fs-2">
-            Our mission is to democratize global trade access for small and medium enterprises, ensuring fair and
-            transparent
-            transactions. We envision a world where every producer can directly reach international markets.
-          </div>
-        </div>
+  <div class="d-flex flex-column justify-content-center text-white" style="min-height: 100vh;background-color: #111c41;">
+    <div class="container text-center">
+      <div>
+        <h1 class="page-title d-flex justify-content-center text-white"   data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+        <span>Quartz<span style="color: #3cb6a3;">.</span></span>
+      </h1>
+      <div class="d-flex justify-content-center mb-5">
+        <p class="hero-subheadline">Pioneering fair trade for Latin America.</p>
       </div>
+      </div>
+      
     </div>
+  </div>
 
-  </section>
   <div class="bg-body-team py-5 mb-5">
     <div class="container pb-5">
-      <div class="text-center mb-5">
-        <h2 class="display-4 mb-5 text-center fw-semibold">Meet the team</h2>
+      <div class="border-top border-dark mb-5"></div>
+      <div class="d-flex mb-1 justify-content-between align-items-baseline">
+        <h2 class="display-2 fw-semibold text-uppercase"  data-aos="fade-up" data-aos-easing="ease-in-sine">Our Mission</h2>
+        <span class="display-2 fw-semibold text-uppercase">01</span>
       </div>
-      <div class="team">
+      <div class="border border-dark"></div>
+      <div class="d-flex flex-column justify-content-center" style="min-height: 80vh;">
+        <div>
+          <div class="text-center py-4 fs-1" style="line-height: 1;" data-aos="fade-up" data-aos-delay="200">
+          Our mission is to democratize global trade access for small and medium enterprises, ensuring fair and
+          transparent transactions. 
+        </div>
+        <p class="fs-4 text-center">We envision a world where every producer can directly reach international markets.</p>
+        </div>
+        
+      </div>
+      <div class="border-top border-dark my-5"></div>
+      <div class="d-flex mb-1 justify-content-between align-items-baseline">
+        <h2 class="display-2 fw-semibold text-uppercase" data-aos="fade-up" data-aos-easing="ease-in-sine">The team</h2>
+        <span class="display-2 fw-semibold text-uppercase">02</span>
+      </div>
+      <div class="border border-dark"></div>
+      <div class="team pt-5 mt-5"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="200">
         <div class="row justify-content-center">
           <!-- Team Member Daniel -->
           <div class="col-md-6 col-lg-4 py-2">
@@ -140,6 +158,9 @@
 
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

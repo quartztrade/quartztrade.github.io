@@ -1,6 +1,6 @@
-body{
-    /* color: #081b43; */
-}
+/* body{
+    color: #081b43;
+} */
 .feature-icon {
     width: 8rem;
     height: 8rem;
@@ -153,9 +153,17 @@ body{
 .page-title {
     letter-spacing: -.035em;
     color:#081b43;
+    line-height: 0.9;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center
 }
 
-.page-title {
+.page-title-long {
+    letter-spacing: -.035em;
+    color:#081b43;
     line-height: 0.9;
     text-transform: uppercase;
     height: 100%;
@@ -198,12 +206,18 @@ body{
     .page-title {
         font-size: 9.375vw
     }
+    .page-title-long {
+        font-size: 6vw
+    }
 
 }
 
 @media (max-width: 1024px) {
     .page-title {
         font-size: 105px
+    }
+    .page-title-long {
+        font-size: 90px
     }
 
 
@@ -213,5 +227,17 @@ body{
     .page-title {
         font-size: 12.5vw
     }
+    .page-title-long {
+        font-size: 10.5vw
+    }
 
+}
+
+.gradient-text-darkblue {
+    color: #111c41; /* Fallback color */
+    background: linear-gradient(to right, #111c41, #96c3dc, #6db3a3);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text; /* Standard syntax */
+    -webkit-text-fill-color: transparent; /* For Safari */
+    display: inline-block;
 }
