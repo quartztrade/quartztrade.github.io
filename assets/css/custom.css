@@ -1,20 +1,29 @@
+body{
+    /* color: #081b43; */
+}
 .feature-icon {
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
 }
-
+.navbar-brand img {
+    height: 50px; /* Adjust as needed */
+    width: auto; /* Adjust width automatically to keep the aspect ratio */
+    object-fit: contain; /* This will make sure all parts of your image are visible, including transparent parts */
+    object-position: left; /* Align the image to the left, it might help to cut off some of the blue if it's not needed */
+  }
 /* Basic styles for navbar links */
 .nav-link {
     position: relative;
     display: inline-block;
-    color: #000;
+    color: #081b43;
     text-decoration: none;
     /* Remove default underline */
 }
+
 .nav-top {
     backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px); 
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
 
 /* Create the underline effect on hover */
@@ -27,7 +36,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #3cb6a3;
     transform-origin: bottom left;
     transition: transform 0.25s ease-out;
 }
@@ -89,23 +98,22 @@
     }
 }
 
+
+
+.hero-subheadline {
+    max-width: 400px;
+    /* Ensures text is not too wide on larger screens */
+}
+
 .bg-body-team {
     background-color: #f8f9fa;
     background-image: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
-/* .section-title {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    letter-spacing: 1.5px;
-} */
-
 .team-member.card {
     border: none;
     overflow: hidden;
-    
+
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -114,14 +122,6 @@
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-
-/* .team-member.card-img-top {
-    transition: transform 0.3s ease-in-out;
-}
-
-.team-member.card:hover .card-img-top {
-    transform: scale(1.05);
-} */
 
 .team-member.card-body {
     background-color: white;
@@ -148,4 +148,70 @@
     .team-member.card {
         margin-bottom: 30px;
     }
+}
+
+.page-title {
+    letter-spacing: -.035em;
+    color:#081b43;
+}
+
+.page-title {
+    line-height: 0.9;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+.hero-subheadline {
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    line-height: 1.245;
+    font-weight: 400;
+    margin-top: 2em;
+}
+
+.hero-section {
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.hero-image {
+    max-width: 90%;
+    /* Adjust based on your layout */
+    margin: auto;
+    /* animation: float 5s ease-in-out infinite; */
+    /* Adds a subtle floating animation */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    /* Softens the edges of your image */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    /* Adds depth to your image */
+}
+
+@media (min-width: 1680px) {
+    .page-title {
+        font-size: 9.375vw
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .page-title {
+        font-size: 105px
+    }
+
+
+}
+
+@media (max-width: 640px) {
+    .page-title {
+        font-size: 12.5vw
+    }
+
 }
